@@ -7,6 +7,7 @@
     <title>Minhas Finanças</title>
     
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/popupCadastro.css">    
 </head>
 
 <body>
@@ -26,7 +27,7 @@
             <div class="container_botoes_main">            
                 <img src="images/finance.png" alt="" style="width: 200px; height: 200px; margin-top: -50px;">
                 <div style="margin-bottom: 50px;"> </div>
-                <button class="btn_main btn_cadastrar_main">
+                <button id="btnCadastrar" class="btn_main btn_cadastrar_main">
                     Cadastrar
                 </button>
                 <div style="margin: 5px;"> </div>
@@ -34,13 +35,20 @@
                     Entrar
                 </button>            
             </div>                
+        </div>        
+        <div id="popupModal" class="modal">
+            <div class="modal-content">
+              <button class="fechar" onclick="fecharPopup()">X</button>
+              <iframe src="popupCadastro.html"></iframe>
+            </div>
         </div>
     </main>
-
     <footer class="footer">        
         <p>&copy; 2025 Minhas finanças. Todos os direitos reservados ao Kelvin.</p>
     </footer>    
        
 </body>
+
+<script src="js/script.js"></script> 
 
 </html>
